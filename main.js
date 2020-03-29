@@ -13,7 +13,7 @@ const delButtons = document.querySelectorAll('.del');
 let i = 0;
 
 randomButton.addEventListener('click', () => {
-  if(i < 4) {
+  if(i < pictures.length) {
     const randomNumber = Math.floor(Math.random() * 4);
     img[i].src = pictures[randomNumber];
   } else {
